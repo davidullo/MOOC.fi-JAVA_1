@@ -4,7 +4,22 @@ import java.util.ArrayList;
 public class RemoveLast {
 
     public static void main(String[] args) {
-        // Try your method in here
+        ArrayList<String> list = new ArrayList<>();
+        list.add("First");
+        list.add("Second");
+        list.add("Third");
+        
+        System.out.println(list);
+        removeLast(list);
+        System.out.println(list);
+        
+    }
+    
+    public static void removeLast(ArrayList<String> strings) {
+        int last = strings.size() - 1;
+        if (strings.size() != 0) {
+        strings.remove(last);       
+        }
     }
 
 }
