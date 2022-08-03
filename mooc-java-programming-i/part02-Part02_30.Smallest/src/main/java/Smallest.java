@@ -5,11 +5,17 @@ public class Smallest {
         // Write some code here
         // don't print anything inside this method
         // there must be a return in the end of the method
-        return -1;
+        if (number1 < number2) {
+            return number1;
+        } else if (number1 > number2) {
+            return number2;
+        } else {
+            return 0;
+        }
     }
 
     public static void main(String[] args) {
-        int result = smallest(2, 7);
+        int result = smallest(9, 7);
         System.out.println("Smallest: " + result);
     }
 }
