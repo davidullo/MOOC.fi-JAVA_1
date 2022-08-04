@@ -14,7 +14,7 @@ public class Printer {
             for (int i = 0; i < array[index]; i++) {
                 System.out.print("*");
             }
-            
+
             index++;
         }
     }
